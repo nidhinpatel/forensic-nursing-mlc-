@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forensic Nursing MLC Expanded Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2, h3 { background-color: #004d66; color: white; padding: 8px; border-radius: 4px; }
+    .section { margin-bottom: 20px; padding: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea { width: 100%; padding: 8px; margin-top: 5px; }
+    button { padding: 10px 20px; margin-top: 15px; }
+  </style>
+</head>
+<body>
+
+<h2>Forensic Nursing Intervention Form (Expanded)</h2>
+
+<form>
+
+  <!-- Patient / Case Identification -->
+  <div class="section">
+    <h3>Patient / Case Identification</h3>
+    <label>Patient Name</label><input type="text">
+    <label>Aadhaar / ID Number</label><input type="text">
+    <label>Mobile No. of Attendant</label><input type="tel">
+    <label>Language Spoken</label><input type="text">
+    <label>Relationship with Attendant</label><input type="text">
+    <label>Photograph Upload</label><input type="file">
+  </div>
+
+  <!-- Consent Section -->
+  <div class="section">
+    <h3>Consent</h3>
+    <label>Left/Right Thumb Impression Upload</label><input type="file">
+    <label>Verbal Consent Given?</label><select><option>Yes</option><option>No</option></select>
+    <label>Witness Name</label><input type="text">
+    <label>Witness Signature</label><input type="file">
+    <label>Interpreter Used?</label><select><option>Yes</option><option>No</option></select>
+    <label>Guardian Name (if applicable)</label><input type="text">
+  </div>
+
+  <!-- Injury / Incident Section -->
+  <div class="section">
+    <h3>Injury / Incident Details</h3>
+    <label>Type of Incident</label>
+    <select>
+      <option>Road Traffic Accident</option><option>Fall</option><option>Assault</option>
+      <option>Domestic Violence</option><option>Sexual Assault</option><option>Firearm / Knife</option>
+      <option>Chemical Exposure</option>
+    </select>
+    <label>Sketch / Diagram Upload</label><input type="file">
+    <label>X-ray / Imaging Upload</label><input type="file">
+  </div>
+
+  <!-- Evidence Collection Section -->
+  <div class="section">
+    <h3>Evidence Collection</h3>
+    <label>Time of Sample Collection</label><input type="datetime-local">
+    <label>Chain of Custody Number</label><input type="text">
+    <label>Storage Method</label>
+    <select><option>Icebox</option><option>Dry Bag</option><option>Refrigerated</option><option>Room Temp</option></select>
+    <label>Transport Method</label><select><option>Police</option><option>Nurse</option><option>Self</option><option>Ambulance</option></select>
+    <label>Labeling Photo Upload</label><input type="file">
+    <label>FSL Reference ID</label><input type="text">
+  </div>
+
+  <!-- Investigating Officer Section -->
+  <div class="section">
+    <h3>Investigating Officer</h3>
+    <label>Rank</label><select><option>Constable</option><option>ASI</option><option>SI</option><option>PI</option></select>
+    <label>Badge Number</label><input type="text">
+    <label>Contact Number</label><input type="tel">
+    <label>Signature Upload</label><input type="file">
+    <label>FIR / Crime Number</label><input type="text">
+  </div>
+
+  <!-- Scene & Location -->
+  <div class="section">
+    <h3>Scene / Location Details</h3>
+    <label>GPS Coordinates</label><input type="text">
+    <label>Scene Type</label>
+    <select><option>Hospital ER</option><option>Private Clinic</option><option>Home</option><option>Outdoor</option><option>Vehicle</option><option>Other</option></select>
+    <label>Hazards Present</label><select><option>None</option><option>Biohazard</option><option>Sharp Objects</option><option>Toxic Material</option></select>
+    <label>PPE Used?</label><select><option>Yes</option><option>No</option></select>
+  </div>
+
+  <!-- Final Opinion Section -->
+  <div class="section">
+    <h3>Opinion & Reporting</h3>
+    <label>Nature of Injury</label><select><option>Simple</option><option>Grievous</option><option>Fatal</option></select>
+    <label>Classification</label><select><option>Accidental</option><option>Homicidal</option><option>Suicidal</option><option>Unknown</option></select>
+    <label>Reserve Opinion?</label><select><option>Yes</option><option>No</option></select>
+    <label>Sample Sent to FSL?</label><select><option>Yes</option><option>No</option></select>
+    <label>Final Remarks</label><textarea></textarea>
+  </div>
+
+  <!-- Uploads -->
+  <div class="section">
+    <h3>Attachments</h3>
+    <label>Scanned MLC Form</label><input type="file">
+    <label>Treatment Records</label><input type="file">
+    <label>Lab Report</label><input type="file">
+    <label>Police Letter / FIR Copy</label><input type="file">
+    <label>Dying Declaration</label><input type="file">
+  </div>
+
+  <!-- Action Buttons -->
+  <button type="submit">Submit</button>
+  <button type="button" onclick="window.print()">Print Form</button>
+</form>
+</body>
+</html>
